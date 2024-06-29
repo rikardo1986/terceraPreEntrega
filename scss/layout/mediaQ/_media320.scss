@@ -1,0 +1,203 @@
+/* navbar */
+@media (max-width: 320px) {
+    header {
+        .logo,
+        .lupa {
+            display: none;
+        }
+        nav ul {
+            padding-bottom: 2%;
+                li {
+                    margin-bottom: 0.2rem;
+                    a {
+                    font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+
+/* titulo */
+@media (max-width: 320px) {
+    .principal {
+        display: grid;
+        margin-bottom: 20%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 40%);
+    }
+    .foto_principal img{
+        height: 15rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .titulo {
+        background-position: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 0;
+        h1{
+            font-size: 1rem; 
+            order: 0;
+            padding-top: 0%;
+        }
+        h2{
+            font-size: 1rem;
+            padding-top: 0%;
+        }
+    }
+}
+
+/* servicios 1*/
+@media (max-width:320px) {
+    .servicios1{
+        grid-template-columns:repeat(2, 7rem);
+        grid-template-rows: repeat(2, 9rem);
+        gap: 0.8rem;
+        margin-top: -12%;
+        button{
+            font-size: 0.8rem;
+            border-radius:1rem;
+        }
+    }
+}
+
+/* seccion media */
+@media (max-width:320px) {
+    .medio{
+        font-size: 0.9rem;
+    }
+}
+
+/* servicios 2 */
+@media (max-width:320px) {
+    .servicios2{
+        grid-template-columns:repeat(2, 7rem);
+        grid-template-rows: repeat(3, 9rem);
+        gap: 0.8rem;
+        padding-top: 2%;
+        button{
+            font-size: 0.8rem;
+            border-radius:1rem;
+        }
+    }
+}
+
+/* footer */
+@media (max-width:320px) {
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+/***** UNIDADES ******/
+
+@media (max-width:320px) {
+    .unidades1{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 8rem);
+        grid-template-rows: repeat(3, 5rem);
+        gap: 5%;
+        position: relative;
+        justify-content: center;
+        button{
+            font-size: 0.8rem;
+        }  
+    }
+}
+
+/***** INVENTARIO ******/
+
+@media (max-width:320px) {
+    .ingreso{
+        margin-top: -10%;
+        gap: 5%;
+        grid-template-columns:repeat(2, 9rem);
+        grid-template-rows: repeat(3, 5rem);
+        button{
+            font-size: .7rem;
+        }
+    }
+}
+
+/***** PROCEDIMIENTOS ******/
+
+@media (max-width:320px) {
+    .documentos{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 8rem);
+        grid-template-rows: repeat(3, 4rem);
+        button{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/***** CONTACTOS ******/
+
+@media (max-width:320px) {
+    .container label {
+        font-size: .9rem;
+        button {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+    .form-label p{
+        font-size: .8rem;
+    }
+}
+
+/***** UNIDADES ******/
+@media (max-width:320px) {
+    .unidades1{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 8rem);
+        grid-template-rows: repeat(3, 4rem);
+        gap: 5%;
+        button{
+            border-radius: 1rem;
+            font-size: 0.8rem;
+        }  
+    }
+}
+
+/***** INVENTARIO ******/
+@media (max-width:320px) {
+    .ingreso{
+        gap: 1rem 1rem;
+        margin-bottom: 2rem;
+        grid-template-columns:repeat(2, 9rem);
+        grid-template-rows: repeat(2, 5rem);
+        button{
+            font-size: .7rem;
+        }
+    }
+}
+
+/***** PROCEDIMIENTOS ******/
+@media (max-width:320px) {
+    .documentos{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 8rem);
+        grid-template-rows: repeat(3, 4rem);
+        button{
+            font-size: 0.7rem;
+        }
+    }
+}
+/***** CONTACTOS ******/
+@media (max-width:320px) {
+    .container label {
+        font-size: .9rem;
+        button {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+    .form-label p{
+        font-size: .8rem;
+    }
+}

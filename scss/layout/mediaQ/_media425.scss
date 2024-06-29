@@ -1,0 +1,150 @@
+/* navbar */
+@media (max-width:425px) {
+    header {
+        .logo{
+            display: none;
+        }
+        .lupa{
+            display: none;
+        }
+        nav ul {     
+                padding-bottom: .8rem;
+            a {
+                font-size: 0.7rem;
+                padding: 0.2rem;
+            }
+        }
+    }
+}
+
+/* titulo */
+@media (max-width:425px) {
+    .principal {
+        display: grid;
+        margin-bottom: 20%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 40%);
+    }
+    .foto_principal img{
+        height: 15rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .titulo {
+        background-position: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 0;
+        h1{
+            font-size: 1rem; 
+            order: 0;
+            padding-top: 0%;
+        }
+        h2{
+            font-size: 1rem;
+            padding-top: 0%;
+        }
+    }
+}
+
+/* servicios 1*/
+@media (max-width:425px) {
+    .servicios1{
+        grid-template-columns:repeat(2, 7rem);
+        grid-template-rows: repeat(2, 9rem);
+        gap: 0.8rem;
+        margin-top: -12%;
+        button{
+            font-size: 0.8rem;
+            border-radius:1rem;
+        }
+    }
+}
+
+/* seccion media */
+@media (max-width:425px) {
+    .medio{
+        font-size: 0.9rem;
+    }
+}
+
+/* servicios 2 */
+@media (max-width:425px) {
+    .servicios2{
+        grid-template-columns:repeat(2, 7rem);
+        grid-template-rows: repeat(3, 9rem);
+        gap: 0.8rem;
+        padding-top: 2%;
+        button{
+            font-size: 0.8rem;
+            border-radius:1rem;
+        }
+    }
+}
+
+/* footer */
+@media (max-width:425px) {
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+/***** UNIDADES ******/
+
+@media (max-width:425px) {
+    .unidades1{
+        margin-top: -2.5rem;
+        grid-template-columns:repeat(2, 10rem);
+        grid-template-rows: repeat(3, 5rem);
+        gap: 3rem;
+        button{
+            border-radius: 1rem;
+            font-size: 0.8rem;
+        }  
+    }
+}
+
+/***** INVENTARIO ******/
+@media (max-width:425px) {
+    .ingreso{
+        gap: 1rem 2rem;
+        margin-top: -10%; 
+        margin-bottom: 2rem;
+        grid-template-columns:repeat(2, 10rem);
+        grid-template-rows: repeat(2, 5rem);
+        button{
+            font-size: .7rem;
+        }
+    }
+}
+
+/***** PROCEDIMIENTOS ******/
+
+@media (max-width:425px) {
+    .documentos{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 10rem);
+        grid-template-rows: repeat(3, 4rem);
+        button{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/***** CONTACTOS ******/
+
+@media (max-width:425px) {
+    .container label {
+        font-size: .9rem;
+        button {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+    .form-label p{
+        font-size: .8rem;
+    }
+}

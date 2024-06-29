@@ -1,0 +1,31 @@
+.logo{
+    width:10%;
+    order:0;
+    img{
+    width: 8rem;
+    }
+}
+.lupa{
+    width:10%;
+    order:2;
+    img{
+    width: 30%;
+    float: right;
+    }
+}
+nav {
+    margin: auto;
+    }
+    ul{
+        display: inline-flex;
+        list-style-type: none;
+        order: 1;
+        a{
+            text-decoration: none;
+            font-family: fuente1;
+            color: $color_texto2;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            padding: 1.25rem;
+        }
+    }

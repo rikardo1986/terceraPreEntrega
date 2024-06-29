@@ -1,0 +1,1423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(217, 217, 217);
+}
+
+@font-face {
+  font-family: fuente1;
+  src: url("../assets/fonts/NotoSans.ttf");
+}
+@font-face {
+  font-family: fuente2;
+  src: url("../assets/fonts/MerriweatherSans.ttf");
+}
+header {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TITULO */
+.principal {
+  width: auto;
+  margin: auto;
+  display: grid;
+  position: relative;
+  margin-bottom: -10%;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-template-rows: repeat(2, 30%);
+}
+
+.foto_principal {
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+.foto_principal img {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo {
+  background-color: rgb(24, 45, 152);
+  border-radius: 250px 0 0 250px;
+  grid-column: 4/7;
+  grid-row: 1/3;
+  justify-content: center;
+}
+.titulo h1, .titulo h2 {
+  font-family: fuente2;
+  font-size: 4rem;
+  color: rgb(248, 117, 22);
+  text-align: center;
+  padding-top: 10%;
+}
+.titulo h2 {
+  font-size: 3.5rem;
+  color: white;
+  padding-top: 8%;
+}
+
+/* SERVICIOS 1*/
+.servicios1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, 35rem);
+  grid-template-rows: repeat(2, 18rem);
+  gap: 10rem;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+.servicios1 button {
+  background-size: cover;
+  border-radius: 5%;
+  font-family: fuente2;
+  text-shadow: 0.4rem 0.25rem 0.3rem black;
+  font-size: 1.8rem;
+  color: white;
+}
+.servicios1 button:first-child {
+  background-image: url("../assets/img/ticket.png");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.servicios1 button:nth-child(2) {
+  background-image: url("../assets/img/outlook.png");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.servicios1 button:nth-child(3) {
+  background-image: url("../assets/img/carpetas.png");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.servicios1 button:last-child {
+  background-image: url("../assets/img/vpn1.jpg");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.servicios1 button:hover {
+  filter: grayscale(3);
+}
+
+/* SECCION MEDIA */
+.medio {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(24, 45, 152);
+  padding: 2%;
+  color: white;
+  font-family: fuente2;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* SERVICIOS 2 */
+.servicios2 {
+  width: 100%;
+  display: grid;
+  margin-bottom: 5%;
+  grid-template-columns: repeat(2, 24rem);
+  grid-template-rows: repeat(3, 10rem);
+  justify-content: center;
+  gap: 5rem 20rem;
+  padding-top: 4%;
+}
+.servicios2 button {
+  background-color: rgb(219, 150, 47);
+  color: #182c97;
+  font-family: fuente2;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 2.5rem;
+}
+.servicios2 button:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.servicios2 button:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.servicios2 button:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.servicios2 button:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.servicios2 button:nth-child(5) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.servicios2 button:last-child {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.servicios2 button:active {
+  background-color: rgb(24, 45, 152);
+  color: white;
+}
+
+footer {
+  background-color: rgb(24, 45, 152);
+}
+footer p {
+  color: white;
+  font-family: fuente2;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2%;
+}
+
+/***** UNIDADES ******/
+.unidades1 {
+  width: 100%;
+  display: grid;
+  gap: 10%;
+  margin-bottom: 10%;
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: repeat(3, 14rem);
+  position: relative;
+  justify-content: center;
+}
+.unidades1 button {
+  background-size: cover;
+  border-radius: 2rem;
+  font-family: fuente2;
+  font-size: 3rem;
+  color: white;
+  text-shadow: gray 0.125rem 0.1rem;
+}
+.unidades1 button:first-child {
+  background-image: url("../assets/img/rrhh.png");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.unidades1 button:nth-child(2) {
+  background-image: url("../assets/img/finanzas.png");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.unidades1 button:nth-child(3) {
+  background-image: url("../assets/img/uravit.png");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.unidades1 button:nth-child(4) {
+  background-image: url("../assets/img/custodia.png");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.unidades1 button:nth-child(5) {
+  background-image: url("../assets/img/comunicaciones.png");
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.unidades1 button:last-child {
+  background-image: url("../assets/img/informatica.png");
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.unidades1 button:hover {
+  filter: grayscale(5);
+  color: black;
+}
+
+/***** PROCEDIMIENTOS ******/
+.documentos {
+  width: 100%;
+  display: grid;
+  margin-bottom: 15%;
+  gap: 10%;
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: repeat(3, 50%);
+  position: relative;
+  justify-content: center;
+}
+.documentos button {
+  color: white;
+  font-family: fuente2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 8%;
+}
+.documentos button:first-child {
+  background-color: rgb(24, 45, 152);
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.documentos button:nth-child(2) {
+  background-color: rgb(219, 150, 47);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.documentos button:nth-child(3) {
+  background-color: rgb(24, 45, 152);
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.documentos button:nth-child(4) {
+  background-color: rgb(219, 150, 47);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.documentos button:nth-child(5) {
+  background-color: rgb(24, 45, 152);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.documentos button:last-child {
+  background-color: rgb(219, 150, 47);
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.documentos button:hover {
+  background-color: gray;
+  color: black;
+}
+
+/***** INVENTARIO ******/
+.ingreso {
+  width: 100%;
+  display: grid;
+  gap: 10%;
+  grid-template-columns: repeat(2, 32rem);
+  grid-template-rows: repeat(2, 10rem);
+  position: relative;
+  justify-content: center;
+}
+.ingreso button {
+  background-position: center;
+  background-size: cover;
+  font-family: fuente2;
+  font-size: 2rem;
+  color: white;
+  padding-left: 50%;
+}
+.ingreso button:first-child {
+  background-image: url("../assets/img/nuevo.PNG");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.ingreso button:nth-child(2) {
+  background-image: url("../assets/img/baja.PNG");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.ingreso button:nth-child(3) {
+  background-image: url("../assets/img/asignados.PNG");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.ingreso button:last-child {
+  background-image: url("../assets/img/exportar.PNG");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.ingreso button:hover {
+  color: rgb(24, 45, 152);
+}
+
+/* CONTACTO */
+.container {
+  width: 100%;
+  margin: 2%;
+  padding-left: 30%;
+  position: relative;
+}
+.container .form-label p {
+  color: red;
+}
+.container label {
+  font-family: fuente2;
+  font-size: 1.8rem;
+  color: rgb(24, 45, 152);
+  display: flex;
+  margin-bottom: 0.3rem;
+}
+.container input {
+  width: 40%;
+  height: 3rem;
+  border: 0.08rem solid #ccc;
+}
+.container .mensaje {
+  width: 40%;
+  height: 10rem;
+  border: 0.08rem solid #ccc;
+}
+.container button {
+  text-align: center;
+  background: rgb(219, 150, 47);
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.container button:active {
+  background-color: rgb(24, 45, 152);
+  color: white;
+}
+
+.logo {
+  width: 10%;
+  order: 0;
+}
+.logo img {
+  width: 8rem;
+}
+
+.lupa {
+  width: 10%;
+  order: 2;
+}
+.lupa img {
+  width: 30%;
+  float: right;
+}
+
+nav {
+  margin: auto;
+}
+
+ul {
+  display: inline-flex;
+  list-style-type: none;
+  order: 1;
+}
+ul a {
+  text-decoration: none;
+  font-family: fuente1;
+  color: #182c97;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1.25rem;
+}
+
+/* navbar */
+@media (max-width: 2560px) {
+  header .logo img {
+    width: 10rem;
+  }
+  header .lupa img {
+    width: 6rem;
+  }
+  header nav ul {
+    order: 2;
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 4rem;
+  }
+}
+/* titulo */
+@media (max-width: 2560px) {
+  .titulo h1, .titulo h2 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 2560px) {
+  .servicios1 {
+    gap: 8rem;
+    grid-template-columns: repeat(2, 26rem);
+    grid-template-rows: repeat(2, 12rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 2560px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 2560px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2.2rem 12rem;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 2560px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 2560px) {
+  .unidades1 {
+    gap: 2rem 8rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 9rem);
+    margin-bottom: 2rem;
+  }
+  .unidades1 button {
+    font-size: 1.4rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 2560px) {
+  .ingreso {
+    gap: 4rem 20rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .ingreso button {
+    font-size: 1.4rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 2560px) {
+  .documentos {
+    gap: 3rem 10rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(2, 28rem);
+    grid-template-rows: repeat(3, 10rem);
+  }
+  .documentos button {
+    font-size: 1.2rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 2560px) {
+  .container label {
+    font-size: 3rem;
+  }
+  .container label button {
+    font-size: 4rem;
+  }
+  .form-label p {
+    font-size: 3rem;
+  }
+}
+/* navbar */
+@media (max-width: 1440px) {
+  header .logo img {
+    width: 7rem;
+  }
+  header .lupa img {
+    width: 4rem;
+  }
+  header nav ul {
+    order: 2;
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+}
+/* titulo */
+@media (max-width: 1440px) {
+  .titulo h1, .titulo h2 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1440px) {
+  .servicios1 {
+    gap: 8rem;
+    grid-template-columns: repeat(2, 26rem);
+    grid-template-rows: repeat(2, 12rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1440px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1440px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2.2rem 12rem;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1440px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1440px) {
+  .unidades1 {
+    gap: 2rem 8rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 9rem);
+    margin-bottom: 2rem;
+  }
+  .unidades1 button {
+    font-size: 1.4rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1440px) {
+  .ingreso {
+    gap: 4rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 21rem);
+    grid-template-rows: repeat(2, 9rem);
+  }
+  .ingreso button {
+    font-size: 1.4rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1440px) {
+  .documentos {
+    gap: 3rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1.2rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1440px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 0.6rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 1280px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    order: 2;
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+}
+/* titulo */
+@media (max-width: 1280px) {
+  .titulo h1, .titulo h2 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1280px) {
+  .servicios1 {
+    gap: 5rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1280px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1280px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2rem 8rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1280px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1280px) {
+  .unidades1 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1280px) {
+  .ingreso {
+    gap: 4rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1.2rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1280px) {
+  .documentos {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 17rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1280px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 1024px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    order: 2;
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+}
+/* titulo */
+@media (max-width: 1024px) {
+  .titulo h1, .titulo h2 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1024px) {
+  .servicios1 {
+    gap: 5rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1024px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1024px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2rem 8rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1024px) {
+  .unidades1 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1024px) {
+  .ingreso {
+    gap: 4rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1.2rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1024px) {
+  .documentos {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 17rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1024px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 768px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    order: 2;
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+}
+/* titulo */
+@media (max-width: 768px) {
+  .titulo h1, .titulo h2 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 768px) {
+  .servicios1 {
+    gap: 5rem;
+    grid-template-columns: repeat(2, 16rem);
+    grid-template-rows: repeat(2, 9rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 768px) {
+  .medio {
+    font-size: 1.2rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 768px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 11rem);
+    grid-template-rows: repeat(3, 5rem);
+    justify-content: center;
+    gap: 2rem 11rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 768px) {
+  .unidades1 {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 768px) {
+  .ingreso {
+    gap: 3rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 768px) {
+  .documentos {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 0.8rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 768px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 425px) {
+  header .logo {
+    display: none;
+  }
+  header .lupa {
+    display: none;
+  }
+  header nav ul {
+    padding-bottom: 0.8rem;
+  }
+  header nav ul a {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+/* titulo */
+@media (max-width: 425px) {
+  .principal {
+    display: grid;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 40%);
+  }
+  .foto_principal img {
+    height: 15rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    order: 0;
+    padding-top: 0%;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+  }
+}
+/* servicios 1*/
+@media (max-width: 425px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin-top: -12%;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 425px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 425px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 0.8rem;
+    padding-top: 2%;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 425px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 425px) {
+  .unidades1 {
+    margin-top: -2.5rem;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 3rem;
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 425px) {
+  .ingreso {
+    gap: 1rem 2rem;
+    margin-top: -10%;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .ingreso button {
+    font-size: 0.7rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 425px) {
+  .documentos {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.8rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 425px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 375px) {
+  header .logo {
+    display: none;
+  }
+  header .lupa {
+    display: none;
+  }
+  header nav ul {
+    padding-bottom: 0.8rem;
+  }
+  header nav ul a {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+}
+/* titulo */
+@media (max-width: 375px) {
+  .principal {
+    display: grid;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 40%);
+  }
+  .foto_principal img {
+    height: 15rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    order: 0;
+    padding-top: 0%;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+  }
+}
+/* servicios 1*/
+@media (max-width: 375px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin-top: -12%;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 375px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 375px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 0.8rem;
+    padding-top: 2%;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 375px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 375px) {
+  .unidades1 {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(3, 5rem);
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 375px) {
+  .ingreso {
+    gap: 1rem 1rem;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(2, 4rem);
+  }
+  .ingreso button {
+    font-size: 0.8rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 375px) {
+  .documentos {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.7rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 375px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/* navbar */
+@media (max-width: 320px) {
+  header .logo,
+  header .lupa {
+    display: none;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul li {
+    margin-bottom: 0.2rem;
+  }
+  header nav ul li a {
+    font-size: 0.6rem;
+  }
+}
+/* titulo */
+@media (max-width: 320px) {
+  .principal {
+    display: grid;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 40%);
+  }
+  .foto_principal img {
+    height: 15rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    order: 0;
+    padding-top: 0%;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+  }
+}
+/* servicios 1*/
+@media (max-width: 320px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin-top: -12%;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 320px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 320px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 0.8rem;
+    padding-top: 2%;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 320px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 320px) {
+  .unidades1 {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 5%;
+    position: relative;
+    justify-content: center;
+  }
+  .unidades1 button {
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 320px) {
+  .ingreso {
+    margin-top: -10%;
+    gap: 5%;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(3, 5rem);
+  }
+  .ingreso button {
+    font-size: 0.7rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 320px) {
+  .documentos {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.8rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 320px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 320px) {
+  .unidades1 {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+    gap: 5%;
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 320px) {
+  .ingreso {
+    gap: 1rem 1rem;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .ingreso button {
+    font-size: 0.7rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 320px) {
+  .documentos {
+    margin-top: -12%;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.7rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 320px) {
+  .container label {
+    font-size: 0.9rem;
+  }
+  .container label button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .form-label p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

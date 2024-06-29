@@ -1,0 +1,128 @@
+/* navbar */
+@media (max-width:768px) {
+    header{
+        .logo {
+            img {
+            width: 5rem;
+            }
+        }
+        .lupa {
+            img {
+            width: 2rem;
+            }
+        }
+            nav ul {
+            order: 2;
+            padding-bottom: 2%; 
+            a {
+                text-align: left;
+                font-size: 1.1rem;
+                padding: 0.75rem;
+            }
+        }
+    }
+}
+
+/* titulo */
+@media (max-width:768px) {
+    .titulo 
+        h1{
+        font-size: 1.6rem;
+        }
+        h2{
+        font-size: 1.2rem;
+        }
+    }
+
+/* servicios 1*/
+@media (max-width:768px) {
+    .servicios1{
+        gap: 5rem;
+        grid-template-columns:repeat(2, 16rem);
+        grid-template-rows: repeat(2, 9rem);
+        button{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+/* seccion media */
+@media (max-width:768px){
+    .medio{
+        font-size: 1.2rem;
+    }
+}
+
+/* servicios 2 */
+@media (max-width:768px) {
+    .servicios2{
+        grid-template-columns:repeat(2, 11rem);
+        grid-template-rows: repeat(3, 5rem);
+        justify-content: center;
+        gap: 2rem 11rem;
+        padding: 2%;
+        button{
+        font-size: 1rem;
+        border-radius:2rem;
+        }
+    }
+}
+
+/* footer */
+@media (max-width:768px) {
+    footer p{
+        font-size: 1rem;
+        padding: 2%;
+    }
+}
+
+/***** UNIDADES ******/
+@media (max-width:768px) {
+    .unidades1{
+        grid-template-columns:repeat(2, 15rem);
+        grid-template-rows: repeat(3, 7rem);
+        gap: 2rem 8rem;
+        button{
+            font-size: 1rem;
+        }  
+    }
+}
+
+/***** INVENTARIO ******/
+@media (max-width:768px) {
+    .ingreso{
+        gap: 3rem;
+        margin-bottom: 4rem;
+        grid-template-columns:repeat(2, 18rem);
+        grid-template-rows: repeat(2, 6rem);
+        button{
+            font-size: 1rem;
+        }
+    }
+}
+
+/***** PROCEDIMIENTOS ******/
+@media (max-width:768px) {
+    .documentos{
+        margin-top: -12%;
+        grid-template-columns:repeat(2, 15rem);
+        grid-template-rows: repeat(3, 6rem);
+        button{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/***** CONTACTOS ******/
+@media (max-width:768px) {
+    .container label {
+        font-size: .9rem;
+        button {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    }
+    .form-label p{
+        font-size: .8rem;
+    }
+}
