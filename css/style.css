@@ -25,9 +25,9 @@ header {
 
 /* TITULO */
 .principal {
-  width: auto;
-  margin: auto;
   display: grid;
+  width: 100%;
+  margin: auto;
   position: relative;
   margin-bottom: -10%;
   grid-template-columns: repeat(6, 16.6%);
@@ -65,15 +65,15 @@ header {
 
 /* SERVICIOS 1*/
 .servicios1 {
+  display: grid;
   width: 100%;
   height: 100%;
-  display: grid;
   margin: auto;
-  grid-template-columns: repeat(2, 35rem);
-  grid-template-rows: repeat(2, 18rem);
-  gap: 10rem;
   position: relative;
   justify-content: center;
+  gap: 10rem;
+  grid-template-columns: repeat(2, 35rem);
+  grid-template-rows: repeat(2, 18rem);
   padding-bottom: 4%;
 }
 .servicios1 button {
@@ -105,7 +105,10 @@ header {
   grid-row: 2/3;
 }
 .servicios1 button:hover {
-  filter: grayscale(3);
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  transition: transform 200ms linear 100ms;
+  align-content: center;
 }
 
 /* SECCION MEDIA */
@@ -199,38 +202,40 @@ footer p {
   text-shadow: gray 0.125rem 0.1rem;
 }
 .unidades1 button:first-child {
-  background-image: url("../assets/img/rrhh.png");
+  background-image: url("../../assets/img/rrhh.PNG");
   grid-column: 1/2;
   grid-row: 1/2;
 }
 .unidades1 button:nth-child(2) {
-  background-image: url("../assets/img/finanzas.png");
+  background-image: url("../../assets/img/finanzas.png");
   grid-column: 2/3;
   grid-row: 1/2;
 }
 .unidades1 button:nth-child(3) {
-  background-image: url("../assets/img/uravit.png");
+  background-image: url("../../assets/img/uravit.png");
   grid-column: 1/2;
   grid-row: 2/3;
 }
 .unidades1 button:nth-child(4) {
-  background-image: url("../assets/img/custodia.png");
+  background-image: url("../../assets/img/custodia.png");
   grid-column: 2/3;
   grid-row: 2/3;
 }
 .unidades1 button:nth-child(5) {
-  background-image: url("../assets/img/comunicaciones.png");
+  background-image: url("../../assets/img/comunicaciones.png");
   grid-column: 1/2;
   grid-row: 3/4;
 }
 .unidades1 button:last-child {
-  background-image: url("../assets/img/informatica.png");
+  background-image: url("../../assets/img/informatica.png");
   grid-column: 2/3;
   grid-row: 3/4;
 }
 .unidades1 button:hover {
-  filter: grayscale(5);
-  color: black;
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  transition: transform 300ms linear 100ms;
+  align-content: center;
 }
 
 /***** PROCEDIMIENTOS ******/
@@ -324,8 +329,10 @@ footer p {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.ingreso button:hover {
-  color: rgb(24, 45, 152);
+.ingreso button:active {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  align-content: center;
 }
 
 /* CONTACTO */
@@ -391,7 +398,7 @@ nav {
 }
 
 ul {
-  display: inline-flex;
+  display: flex;
   list-style-type: none;
   order: 1;
 }

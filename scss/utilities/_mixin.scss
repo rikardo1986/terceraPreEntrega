@@ -1,0 +1,39 @@
+@mixin flex($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid1($width, $height, $margin, $position, $justify, $gap){
+    display: grid;
+    width: $width;
+    height: $height;
+    margin: $margin;
+    position: $position;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin grid2($width, $margin, $position){
+    display: grid;
+    width: $width;
+    margin: $margin;
+    position: $position;
+}
+
+@mixin anim1($transform, $filter, $transition,$align){
+    transform: $transform;
+    filter: $filter;
+    transition: $transition;
+    align-content: $align;
+}
+
+@mixin anim2($transform, $filter,$align){
+    transform: $transform;
+    filter: $filter;
+    align-content: $align;
+}
+

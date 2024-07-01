@@ -35,8 +35,8 @@
             grid-column: 2/3;
             grid-row: 2/3;
         }
-            &:hover{
-            color: $color_fondo2;
+            &:active{
+                @include anim2(scale(1.1),drop-shadow(3px 3px 3px $color_sombra2),center);
             }
     }
 }
