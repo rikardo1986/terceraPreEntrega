@@ -37,3 +37,12 @@
     align-content: $align;
 }
 
+@mixin anim3($transition,$width,$height,$margin,$color_sombra2,$color_sombra,$font-size){
+        transition: $transition;
+        width: $width;
+        height: $height;
+        margin: $margin;
+        color: $color_sombra;
+        background-color: $color_sombra2;
+        font-size: $font-size;
+}

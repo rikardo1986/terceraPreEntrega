@@ -287,8 +287,13 @@ footer p {
   grid-row: 3/4;
 }
 .documentos button:hover {
-  background-color: gray;
+  transition: width 2s, height 2s, margin 2s;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
   color: black;
+  background-color: gray;
+  font-size: 1.8rem;
 }
 
 /***** INVENTARIO ******/
@@ -510,6 +515,15 @@ ul a {
   .documentos button {
     font-size: 1.2rem;
   }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 110%;
+    height: 120%;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.6rem;
+  }
 }
 /***** CONTACTOS ******/
 @media (max-width: 2560px) {
@@ -622,6 +636,15 @@ ul a {
   .documentos button {
     font-size: 1.2rem;
   }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 110%;
+    height: 110px;
+    margin: 5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.4rem;
+  }
 }
 /***** CONTACTOS ******/
 @media (max-width: 1440px) {
@@ -732,6 +755,15 @@ ul a {
   }
   .documentos button {
     font-size: 1rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.2rem;
   }
 }
 /***** CONTACTOS ******/
@@ -844,6 +876,15 @@ ul a {
   }
   .documentos button {
     font-size: 1rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.2rem;
   }
 }
 /***** CONTACTOS ******/
@@ -956,6 +997,15 @@ ul a {
   }
   .documentos button {
     font-size: 0.8rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: 5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1rem;
   }
 }
 /***** CONTACTOS ******/
@@ -1093,6 +1143,15 @@ ul a {
   .documentos button {
     font-size: 0.8rem;
   }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 100px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 0.8rem;
+  }
 }
 /***** CONTACTOS ******/
 @media (max-width: 425px) {
@@ -1226,6 +1285,15 @@ ul a {
   }
   .documentos button {
     font-size: 0.7rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 100px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 0.8rem;
   }
 }
 /***** CONTACTOS ******/
@@ -1361,6 +1429,15 @@ ul a {
     grid-template-rows: repeat(3, 4rem);
   }
   .documentos button {
+    font-size: 0.8rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 100px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
     font-size: 0.8rem;
   }
 }

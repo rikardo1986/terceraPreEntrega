@@ -46,8 +46,7 @@
             grid-row: 3/4;
         }
             &:hover{
-            background-color: $color_sombra2;
-            color: $color_sombra;
+                @include anim3((width 2s, height 2s, margin 2s),100%,190px,0 auto,$color_sombra2,$color_sombra,1.8rem)
             }
     }
 }

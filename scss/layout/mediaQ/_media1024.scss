@@ -109,6 +109,9 @@
         grid-template-rows: repeat(3, 6rem);
         button{
             font-size: 1rem;
+            &:hover{
+                @include anim3((width 2s, height 2s, margin 2s),100%,120px,-5% auto,$color_sombra2,$color_sombra,1.2rem)
+            }
         }
     }
 }
