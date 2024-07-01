@@ -17,32 +17,32 @@
         color: $color_texto;
         text-shadow: $color_sombra2 0.125rem 0.1rem;
         &:first-child{
-            background-image: url("../../assets/img/rrhh.PNG");
+            background-image: url("../assets/img/rrhh.PNG");
             grid-column: 1/2;
             grid-row: 1/2;
         }
         &:nth-child(2){ 
-            background-image: url("../../assets/img/finanzas.png");
+            background-image: url("../assets/img/finanzas.png");
             grid-column: 2/3;
             grid-row: 1/2;
         }
         &:nth-child(3){ 
-            background-image: url("../../assets/img/uravit.png");
+            background-image: url("../assets/img/uravit.png");
             grid-column: 1/2;
             grid-row: 2/3;
         }
         &:nth-child(4){ 
-            background-image: url("../../assets/img/custodia.png");
+            background-image: url("../assets/img/custodia.png");
             grid-column: 2/3;
             grid-row: 2/3;
         }
         &:nth-child(5){ 
-            background-image: url("../../assets/img/comunicaciones.png");
+            background-image: url("../assets/img/comunicaciones.png");
             grid-column: 1/2;
             grid-row: 3/4;
         }
         &:last-child{ 
-            background-image: url("../../assets/img/informatica.png");
+            background-image: url("../assets/img/informatica.png");
             grid-column: 2/3;
             grid-row: 3/4;
         }
